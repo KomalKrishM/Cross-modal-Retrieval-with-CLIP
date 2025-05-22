@@ -1,7 +1,7 @@
 ### 🖼 Example: Image-to-Text Retrieval
 
 **Query (Image):**  
-![Example Query Image]([6734417.jpg])
+![Example Query Image](6734417.jpg)
 
 ** Captions:**
 1. "A small blond boy wearing a green coat , blue pants and white shoes is standing close to and looking at a body of water ." *Score - 0.79*
