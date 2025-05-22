@@ -13,10 +13,10 @@ The system can:
 **Query (Image):**  
 ![Example Query Image](6734417.jpg)
 
-** Captions:**
-1. "A small blond boy wearing a green coat , blue pants and white shoes is standing close to and looking at a body of water ." *Score - 0.79*
-2. "A kid is playing at the seashore with his friends." *score - 0.22*
-3. "A Kid is eating food while watching a movie" *score - 0.00006*
+**Captions:**
+1. "A small blond boy wearing a green coat , blue pants and white shoes is standing close to and looking at a body of water ."   *Similarity - 0.79*
+2. "A kid is playing at the seashore with his friends."   *Similarity - 0.22*
+3. "A Kid is eating food while watching a movie"   *Similarity - 0.00006*
 
 ---
 
