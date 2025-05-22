@@ -1,3 +1,12 @@
+### 🖼 Example: Image-to-Text Retrieval
+
+**Query (Image):**  
+![Example Query Image]([examples/query_image.jpg)](https://github.com/KomalKrishM/Cross-modal-Retrieval-with-CLIP/blob/main/6734417.jpg)
+
+** Captions:**
+1. "A small blond boy wearing a green coat , blue pants and white shoes is standing close to and looking at a body of water ." *Score - 0.79*
+2. "A kid is playing at the seashore with his friends." *score - 0.22*
+3. "A Kid is eating food while watching a movie" *score - 0.00006*
 
 
 # 📘 Cross-Modal Retrieval with CLIP on Flickr30K
