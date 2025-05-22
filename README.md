@@ -1,6 +1,6 @@
 
 
-# 📘 Cross-Modal Retrieval with CLIP on Flickr30K
+# Cross-Modal Retrieval with CLIP on Flickr30K
 
 This project implements **cross-modal retrieval** using the **Contrastive Language–Image Pretraining (CLIP)** model on the **Flickr30K** dataset.
 
@@ -8,7 +8,7 @@ The system can:
 - Retrieve the most relevant **caption** for a given **image**
 - Retrieve the most relevant **image** for a given **caption**
 
-### 🖼 Example: Image-to-Text Retrieval
+### Example: Image-to-Text Retrieval
 
 **Query (Image):**  
 ![Example Query Image](6734417.jpg)
@@ -20,7 +20,7 @@ The system can:
 
 ---
 
-## 📂 Files
+## Files
 
 - `CRMwCLIP.py`  
   Generates a test set of 1,000 samples from Flickr30K and evaluates retrieval performance using Recall@1, Recall@5, and Recall@10.
@@ -30,7 +30,7 @@ The system can:
 
 ---
 
-## 📊 Metrics Explained
+## Metrics Explained
 
 **Recall@K** indicates whether the correct match appears in the top K results returned by the model:
 
@@ -40,9 +40,9 @@ The system can:
 
 ---
 
-## 📈 Results
+## Results
 
-### 🔁 Image-to-Text Retrieval
+### Image-to-Text Retrieval
 
 | Metric     | Value (%) |
 |------------|------------|
@@ -50,7 +50,7 @@ The system can:
 | Recall@5   | 62.88      |
 | Recall@10  | 75.88      |
 
-### 🔁 Text-to-Image Retrieval
+### Text-to-Image Retrieval
 
 | Metric     | Value (%) |
 |------------|------------|
@@ -60,7 +60,7 @@ The system can:
 
 ---
 
-## 🛠 Requirements
+## Requirements
 
 - Python 3.x
 - PyTorch
@@ -69,7 +69,7 @@ The system can:
 
 ---
 
-## 🧪 Usage
+## Usage
 
 ```bash
 # Evaluate retrieval performance
@@ -78,4 +78,11 @@ python CRMwCLIP.py
 # Run demo analysis
 python CLIP_Analysis.py
 
+```
+
+---
+
+## Acknowledgement
+
+If you find this work is useful, appreciate your acknowledgement to this repository.  
 
