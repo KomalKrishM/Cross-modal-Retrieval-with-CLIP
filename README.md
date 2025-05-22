@@ -86,3 +86,42 @@ python CLIP_Analysis.py
 
 If you find this work is useful, appreciate your acknowledgement to this repository.  
 
+
+## References 
+
+This project uses the [Flickr30K dataset](http://shannon.cs.illinois.edu/DenotationGraph/) for training and evaluation.
+
+@article{young2014image,
+  title={From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions},
+  author={Young, Peter and Lai, Alice and Hodosh, Micah and Hockenmaier, Julia},
+  journal={Transactions of the association for computational linguistics},
+  volume={2},
+  pages={67--78},
+  year={2014},
+  publisher={MIT Press One Rogers Street, Cambridge, MA 02142-1209, USA journals-info~…}
+}
+
+This project uses the [CLIP model](https://github.com/openai/CLIP)
+
+@inproceedings{radford2021learning,
+  title={Learning transferable visual models from natural language supervision},
+  author={Radford, Alec and Kim, Jong Wook and Hallacy, Chris and Ramesh, Aditya and Goh, Gabriel and Agarwal, Sandhini and Sastry, Girish and Askell, Amanda and Mishkin, Pamela and Clark, Jack and others},
+  booktitle={International conference on machine learning},
+  pages={8748--8763},
+  year={2021},
+  organization={PmLR}
+}
+
+Python Software Foundation. Python Language Reference, version 3.X.
+Available at: https://www.python.org/
+
+Paszke, A., Gross, S., Massa, F., Lerer, A., Bradbury, J., Chanan, G.,
+Killeen, T., Lin, Z., Gimelshein, N., Antiga, L., Desmaison, A.,
+Kopf, A., Yang, E., DeVito, Z., Raison, M., Tejani, A., Chilamkurthy, S.,
+Steiner, B., Fang, L., Bai, J., & Chintala, S.
+PyTorch: An Imperative Style, High-Performance Deep Learning Library.
+In NeurIPS 2019.
+
+I used ChatGPT for cleaning the text and parts of the code
+OpenAI. (2024). ChatGPT (May 22 version) [Large language model]. https://chat.openai.com
+
