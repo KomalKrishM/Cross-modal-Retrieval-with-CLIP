@@ -1,12 +1,3 @@
-### 🖼 Example: Image-to-Text Retrieval
-
-**Query (Image):**  
-![Example Query Image](6734417.jpg)
-
-** Captions:**
-1. "A small blond boy wearing a green coat , blue pants and white shoes is standing close to and looking at a body of water ." *Score - 0.79*
-2. "A kid is playing at the seashore with his friends." *score - 0.22*
-3. "A Kid is eating food while watching a movie" *score - 0.00006*
 
 
 # 📘 Cross-Modal Retrieval with CLIP on Flickr30K
@@ -16,6 +7,16 @@ This project implements **cross-modal retrieval** using the **Contrastive Langua
 The system can:
 - Retrieve the most relevant **caption** for a given **image**
 - Retrieve the most relevant **image** for a given **caption**
+
+### 🖼 Example: Image-to-Text Retrieval
+
+**Query (Image):**  
+![Example Query Image](6734417.jpg)
+
+** Captions:**
+1. "A small blond boy wearing a green coat , blue pants and white shoes is standing close to and looking at a body of water ." *Score - 0.79*
+2. "A kid is playing at the seashore with his friends." *score - 0.22*
+3. "A Kid is eating food while watching a movie" *score - 0.00006*
 
 ---
 
