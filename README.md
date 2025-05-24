@@ -10,7 +10,7 @@ The system can:
 
 ### Example: Image-to-Text Retrieval
 
-**Query (Image):**  
+**Query (Image):** 
 ![Example Query Image](6734417.jpg)
 
 **Captions:**
