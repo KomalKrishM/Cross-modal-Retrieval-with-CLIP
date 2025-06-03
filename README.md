@@ -122,6 +122,6 @@ Steiner, B., Fang, L., Bai, J., & Chintala, S.
 PyTorch: An Imperative Style, High-Performance Deep Learning Library.
 In NeurIPS 2019.
 
-I used ChatGPT for cleaning the text and parts of the code
+I used ChatGPT for refactoring the code
 OpenAI. (2024). ChatGPT (May 22 version) [Large language model]. https://chat.openai.com
 
