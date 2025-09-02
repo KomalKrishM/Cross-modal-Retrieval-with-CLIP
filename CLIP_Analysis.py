@@ -44,20 +44,13 @@ def text_retrieval(query_image, texts):
     max_index  = similarity.argmax().item()
     return similarity, max_index
 
-# def similarity_matrix(image_features, text_features):
-#     for image in images:
-#             image_features
-
-
-# def clip_similarity(images, texts):
-
 
 # Image paths
-image_path1 = "/Users/komalkrishnamogilipalepu/Downloads/Cross_modal_Retrieval/6734417.jpg"
+image_path1 = "./Cross_modal_Retrieval/6734417.jpg"
 
-image_path2 = "/Users/komalkrishnamogilipalepu/Downloads/Cross_modal_Retrieval/8664922.jpg"
+image_path2 = "./Cross_modal_Retrieval/8664922.jpg"
 
-image_path3 = "/Users/komalkrishnamogilipalepu/Downloads/Cross_modal_Retrieval/19610188.jpg"
+image_path3 = "./Cross_modal_Retrieval/19610188.jpg"
 
 # Load and preprocess images
 # display_image(image_path1, "Image 1")
@@ -81,7 +74,6 @@ text_descriptions = [text_description1, text_description2, text_description3]
 texts = clip.tokenize(text_descriptions).to(device)
 print("tokenized caption shape:",texts[0].shape)
 
-# pri
 # Image list for retrieval
 images = [processed_image1, processed_image2, processed_image3]
 
@@ -90,7 +82,7 @@ images = [processed_image1, processed_image2, processed_image3]
 
 query_text = texts[0][np.newaxis,:]
 print("tokenized query text shape:",query_text.shape)
-# pri
+
 image_probs, best_image_index = image_retrieval(images, query_text)
 
 # Query a text with an image
