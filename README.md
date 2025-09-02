@@ -23,7 +23,7 @@ The system can:
 ## Files
 
 - `CRMwCLIP.py`  
-  Extract the 1000 captions for 1000 test Flickr30k images and evaluates retrieval performance using Recall@1, Recall@5, and Recall@10.
+  Extract the 1000 captions for 1000 test Flickr30K images and evaluates retrieval performance using Recall@1, Recall@5, and Recall@10.
 
 - `CRMwCLIP_MSCOCO.py`  
   Extract the 5000 captions for 5000 val MSCOCO images and evaluates retrieval performance using Recall@1, Recall@5, and Recall@10.
@@ -43,7 +43,7 @@ The system can:
 
 ---
 
-## Results on Flickr30k
+## Results on Flickr30K
 
 ### Image-to-Text Retrieval
 
