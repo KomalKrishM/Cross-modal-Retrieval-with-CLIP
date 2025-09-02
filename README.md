@@ -91,8 +91,11 @@ The system can:
 ## Usage
 
 ```bash
-# Evaluate retrieval performance
+# Evaluate retrieval performance on Flickr30k test data
 python CRMwCLIP.py
+
+# Evaluate retrieval performance on MSCOCO test data
+python CRMwCLIP_MSCOCO.py
 
 # Run demo analysis
 python CLIP_Analysis.py
@@ -138,9 +141,7 @@ Paszke, A., Gross, S., Massa, F., Lerer, A., Bradbury, J., Chanan, G.,
 Killeen, T., Lin, Z., Gimelshein, N., Antiga, L., Desmaison, A.,
 Kopf, A., Yang, E., DeVito, Z., Raison, M., Tejani, A., Chilamkurthy, S.,
 Steiner, B., Fang, L., Bai, J., & Chintala, S.
+
 PyTorch: An Imperative Style, High-Performance Deep Learning Library.
 In NeurIPS 2019.
-
-I used ChatGPT for refactoring the code
-OpenAI. (2024). ChatGPT (May 22 version) [Large language model]. https://chat.openai.com
 
