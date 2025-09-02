@@ -40,7 +40,7 @@ The system can:
 
 ---
 
-## Results
+## Results on Flickr30k
 
 ### Image-to-Text Retrieval
 
@@ -57,6 +57,25 @@ The system can:
 | Recall@1   | 61.06      |
 | Recall@5   | 85.06      |
 | Recall@10  | 90.86      |
+
+---
+## Results on MSCOCO
+
+### Image-to-Text Retrieval
+
+| Metric     | Value (%) |
+|------------|------------|
+| Recall@1   | 51.1      |
+| Recall@5   | 88.2      |
+| Recall@10  | 95.2      |
+
+### Text-to-Image Retrieval
+
+| Metric     | Value (%) |
+|------------|------------|
+| Recall@1   | 66.0      |
+| Recall@5   | 90.9      |
+| Recall@10  | 97.8      |
 
 ---
 
