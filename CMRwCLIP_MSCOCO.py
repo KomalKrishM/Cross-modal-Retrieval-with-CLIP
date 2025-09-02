@@ -4,7 +4,6 @@ from PIL import Image
 import clip
 import torch
 import random
-# from CMRwCLIP import load_and_preprocess_image, retrieve_image, retrieve_text
 
 def extract_captions(val_json_file_path):
 
@@ -53,15 +52,8 @@ def load_and_preprocess_image(image_path, device):
 def retrieve_text(query_image, text_features, model):
     with torch.no_grad():
         image_features = model.encode_image(query_image)
-    #   text_features  = model.encode_text(texts)
-    # print(image_features.shape)
-    # pri
     similarity = (image_features @ text_features.T).softmax(dim=-1)
-    # print(similarity.shape)
-
-    # one_max_index_1 = similarity.argmax().item()
     one_max_index = sorted(range(similarity.shape[1]), key=lambda i: similarity[0][i], reverse=True)[:1]
-    # print(one_max_index_1, one_max_index_2)
     five_max_indices = sorted(range(similarity.shape[1]), key=lambda i: similarity[0][i], reverse=True)[:5]
     ten_max_indices = sorted(range(similarity.shape[1]), key=lambda i: similarity[0][i], reverse=True)[:10]
 
@@ -73,15 +65,8 @@ def retrieve_image(images, query_text, model):
     with torch.no_grad():
         image_features = torch.cat(images)
         text_features = model.encode_text(query_text)
-        # print(image_features.shape)
-        # print(text_features.shape)
-        # pri
     similarity = (image_features @ text_features.T).softmax(dim=0)
-    # print(similarity.shape)
-    # one_max_index_1 = similarity.argmax().item()
     one_max_index = sorted(range(similarity.shape[0]), key=lambda i: similarity[i], reverse=True)[:1]
-    # print(one_max_index_1, one_max_index_2)
-    # pri
     five_max_indices = sorted(range(similarity.shape[0]), key=lambda i:similarity[i], reverse=True)[:5]
     ten_max_indices = sorted(range(similarity.shape[0]), key=lambda i:similarity[i], reverse=True)[:10]
 
@@ -151,7 +136,7 @@ def text_to_image_retrieval(image_ids_path, captions, caption_ids, image_ids, mo
             100.0 * (top_10_correctly_retrieved_images / len(caption_ids))
 
 
-redundant_captions_dict = extract_captions("/Users/komalkrishnamogilipalepu/Downloads/MSCOCO/MSCOCO_Val/annotations/captions_val2017.json")
+redundant_captions_dict = extract_captions("./annotations/captions_val2017.json")
 
 # print(redundant_captions_dict[190236])  # Example to print captions for a specific image ID
 
@@ -174,7 +159,7 @@ for k, v in redundant_captions_dict.items():
 device = "mps" if torch.backends.mps.is_built() else "cpu"
 clip_model, preprocess = clip.load("ViT-B/32", device=device)
 
-images_folder_path = "/Users/komalkrishnamogilipalepu/Downloads/MSCOCO/MSCOCO_Val/val2017/"
+images_folder_path = "./val2017/"
 images_dict = {}
 
 for image_no in os.listdir(images_folder_path):
