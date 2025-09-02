@@ -64,7 +64,7 @@ def load_and_preprocess_image(image_path, device):
 
 
 # Function to compute similarity between a query image and text descriptions
-def text_retrieval(query_image, text_features, model):
+def retrieve_text(query_image, text_features, model):
     with torch.no_grad():
         image_features = model.encode_image(query_image)
 
@@ -78,7 +78,7 @@ def text_retrieval(query_image, text_features, model):
 
 
 # Function to compute similarity between images and a text query
-def image_retrieval(images, query_text, model):
+def retrieve_image(images, query_text, model):
     with torch.no_grad():
         image_features = torch.cat(images)
         text_features = model.encode_text(query_text)
@@ -104,7 +104,7 @@ def image_to_text_retrieval(save_image_path, sampled_captions, sampled_captions_
         
         image_path = os.path.join(save_image_path, image_id)
         _, preprocessed_img_query = load_and_preprocess_image(image_path, device)
-        similarity, top_one, top_five, top_ten = text_retrieval(preprocessed_img_query, text_features, model)
+        similarity, top_one, top_five, top_ten = retrieve_text(preprocessed_img_query, text_features, model)
 
         top_one_cap_id = [sampled_captions_ids[i] for i in top_one]
         top_five_cap_ids = [sampled_captions_ids[i] for i in top_five]
@@ -140,7 +140,7 @@ def text_to_image_retrieval(save_image_path, sampled_captions, sampled_captions_
     for caption_id, caption in zip(sampled_captions_ids, sampled_captions):
      
         tokenized_caption_query = clip.tokenize(caption).to(device)
-        similarity, top_one, top_five, top_ten = image_retrieval(image_features, tokenized_caption_query, model)
+        similarity, top_one, top_five, top_ten = retrieve_image(image_features, tokenized_caption_query, model)
         
         top_one_img_id = [images_id[i] for i in top_one]
         top_five_img_ids = [images_id[i] for i in top_five]
