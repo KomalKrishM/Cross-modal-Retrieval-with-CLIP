@@ -151,8 +151,8 @@ class CLIPRetriever:
            
 def main():
 
-    json_file_path = "/Users/komalkrishnamogilipalepu/Downloads/MSCOCO/MSCOCO_Val/annotations/captions_val2017.json"
-    images_folder_path = "/Users/komalkrishnamogilipalepu/Downloads/MSCOCO/MSCOCO_Val/val2017/"
+    json_file_path = "./annotations/captions_val2017.json"
+    images_folder_path = "./val2017/"
 
     caption_extractor = CaptionExtractor(json_file_path)
     image_processor = ImageProcessor(images_folder_path)
