@@ -180,7 +180,7 @@ def run(source_caption_file_path, source_image_file_path, save_image_path, save_
 
 if __name__ == "__main__":
     source_caption_file_path = "./labels_flickr.txt"
-    source_image_file_path = "/Users/komalkrishnamogilipalepu/Downloads/Cross_modal_Retrieval/flickr30k-images"
+    source_image_file_path = "./flickr30k-images"
     save_image_path = './Sampled_flickr30k-images/'
     save_caption_path = './Sampled_flickr30k-captions/'
 
