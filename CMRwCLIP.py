@@ -4,9 +4,8 @@ import os
 import torch
 import clip
 from PIL import Image
-# import numpy as np
 
-# class CLIPRetrieval:
+
 class DataSampler:
     def __init__(self, source_caption_file_path, source_image_file_path, save_image_path, save_caption_path):
         self.source_caption_file_path = source_caption_file_path
